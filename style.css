@@ -1,0 +1,342 @@
+*
+{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --balck: #101010;
+    --red: #F62F54;
+    --gray: #F3F6FD;
+    --blueHead: #031C79;
+    --blueFooter: #070B3B;
+    --gradColor1: #C8D8FF;
+    --gradColor2: #E0EDFF;
+    --gradColor3: #D8D6FF;
+    --cardColor: #F3F6FD;
+}
+
+header{
+    /* position: fixed; */
+    /* top: 20px; */
+    background-color: var(--blueHead);
+    padding: 10px;
+    display: flex;
+    justify-content:space-around;
+    color: #fff;
+    align-items:center;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+header ul li{
+    font-size: .8em;
+    margin-right: 15px;
+    cursor: pointer;
+}
+header .right a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+}
+
+/* Market Place */
+.marketPlace{
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* top: .8em; */
+    color: var(--black);
+    background: linear-gradient(-45deg,var(--gradColor3), var(--gradColor2), var(--gradColor1));
+}
+.marketPlace .marketTitle{
+    text-align: center;
+    margin-bottom: 8em;
+}
+.plugins{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.plugins .pluginsIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.plugins .pluginsIcon span{
+    border: 2px solid #fff;
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    padding: 5px;
+    color: #fff;
+    background-color: #3DA7ED;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.plugins .pluginsIcon a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: .7em;
+}
+.plugins .html5 span{
+    background-color: #F45B39;
+}
+.plugins .shopify span{
+    background-color: #95BF46;
+}
+.plugins .wooCommerce span{
+    background-color: #874DCC;
+}
+.plugins .prestaShop span{
+    background-color: #C3E3EA;
+}
+.plugins .joomla span{
+    background-color: #2F5DD3;
+}
+.plugins .powerpoint span{
+    background-color: #D35230;
+}
+.plugins .toolbox span{
+    background-color: #254189;
+}
+.plugins .percent span{
+    background-color: #F9270A;
+}
+
+.metier{
+    position: relative;
+    top: 2em;    
+}
+.metier .textMetier{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.metier .textMetier p{
+    margin-top: 15px;
+    font-size: 2.5em;
+    font-weight: 100;;
+}
+.metier .textMetier a{
+    text-decoration: none;
+    color: #051E7C;
+    font-weight: 600;
+    border-top: 3px solid #F70038;
+    border-bottom: 3px solid #F70038;
+}
+.cards{
+    position: relative;
+    top: 2em;
+    display: flex;
+    justify-content:space-around;
+}
+.cards .card{
+    position: relative;
+    width: 300px;
+    height: 310px;
+    background-color:var(--cardColor);
+}
+
+.cards .card .image{
+    width: 300px;
+    height: 200px;
+}
+.cards .card .image img{
+    width: 100%;
+    height: 100%;
+}
+.cards .card .cardText{
+    position: absolute;
+    bottom: 10px;
+    margin: 15px;
+}
+.cards .card .cardText a{
+    text-decoration: none;
+}
+
+.cards .card .cardText h4 a{
+    margin-bottom: 15px;
+    color: var(--black);
+    font-weight: 600;
+}
+.cards .card .cardText p a span{
+    margin-left: 10px;
+}
+.cards .card .cardText p a{
+    color: var(--red);
+    font-size: 14px;
+}
+
+/* Our Values */
+.ourValues{
+    position: relative;
+    top: 8em;
+    /* bottom: 2em; */
+}
+.ourValues .content{
+    width: 100%;
+    height: 375px;
+}
+.ourValues .content img{
+    width: 100%;
+    height: 100%;
+}
+.ourValues .content .valueText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px #000;
+    line-height: 80px;
+    letter-spacing: 2px;
+}
+.ourValues .content .valueText h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 6em ;
+}
+.ourValues .content .valueText #value{
+    font-size: 3em;
+}
+.ourValues .content .valueText .value2{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/* Solutions */
+.solutions{
+    position: relative;
+    top: 12em;
+}
+.solutions .container{
+    position: relative;
+    width: 65%;
+    /* top: 1em; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.solutions p{
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+.solutions .container .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 245px;
+    height: 400px;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, .2);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-right: 30px;
+}
+.solutions .container .card .img{
+    width: 210px;
+    height: 210px;
+}
+.solutions .container .card .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.solutions .container .card .info{
+    text-align: center;
+}
+.solutions .container .card .socialMedia{
+    text-decoration: none;
+    font-size: 1em;
+}
+.solutions .container .card .socialMedia a span{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #1DA1F2;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+}
+.solutions .container .card .socialMedia a{
+    margin: 5px;
+}
+.solutions .container .card .socialMedia .fa-facebook{
+    color: #3B5998;
+}
+.solutions .container .card .socialMedia .fa-twitter{
+    color: #1DA1F2;
+}
+.solutions .container .card .socialMedia .fa-instagram{
+    color: #BF42B5;
+}
+.solutions .container .card .socialMedia .fa-linkedin{
+    color: #0087D2;
+}
+
+/* Footer */
+
+footer{
+    position: relative;
+    top: 15em;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--blueFooter);
+    color: #fff;
+}
+
+footer .netzen{
+    width: 20%;
+}
+.netzen h2{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.netzen span{
+    color: var(--red);
+}
+.netzen p{
+    color: #939393;
+    line-height: 25px;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li{
+    margin: 15px auto;
+}
+footer ul li a{
+    color: #939393;
+    text-decoration: none;
+}
+
+.recentPost .post{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.separator{
+    border-top: 1px solid #939393;
+    margin: 10px auto;
+}
+footer h3{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
